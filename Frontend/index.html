@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101114">
+    <title>Landres Calculator - Benchmark</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="calculator" aria-label="Calculadora Lumen">
+        <header class="header">
+            <div>
+                <p class="brand">Landres</p>
+                <h1 class="title">Calculator</h1>
+            </div>
+            <span class="indicator" aria-hidden="true"></span>
+        </header>
+
+        <section class="display" aria-label="Pantalla">
+            <p class="expression" id="expression" aria-live="polite"></p>
+            <output class="output" id="output" aria-live="polite">0</output>
+        </section>
+
+        <section class="keys" aria-label="Controles">
+            <button class="key utility" data-action="clear" data-keys="Escape|Delete">
+                <span id="clear-label">AC</span>
+            </button>
+            <button class="key utility" data-action="toggle-sign" data-keys="n|N">+/&minus;</button>
+            <button class="key utility" data-action="percent" data-keys="%">%</button>
+            <button class="key operator" data-operator="/" data-keys="/">&divide;</button>
+
+            <button class="key" data-digit="7" data-keys="7">7</button>
+            <button class="key" data-digit="8" data-keys="8">8</button>
+            <button class="key" data-digit="9" data-keys="9">9</button>
+            <button class="key operator" data-operator="*" data-keys="*|x|X">&times;</button>
+
+            <button class="key" data-digit="4" data-keys="4">4</button>
+            <button class="key" data-digit="5" data-keys="5">5</button>
+            <button class="key" data-digit="6" data-keys="6">6</button>
+            <button class="key operator" data-operator="-" data-keys="-">&minus;</button>
+
+            <button class="key" data-digit="1" data-keys="1">1</button>
+            <button class="key" data-digit="2" data-keys="2">2</button>
+            <button class="key" data-digit="3" data-keys="3">3</button>
+            <button class="key operator" data-operator="+" data-keys="+">+</button>
+
+            <button class="key wide" data-digit="0" data-keys="0">0</button>
+            <button class="key" data-action="decimal" data-keys=".|,">.</button>
+            <button class="key equals" data-action="equals" data-keys="=|Enter">=</button>
+        </section>
+    </main>
+
+    <p class="hint">
+        Teclado compatible: n&uacute;meros, operadores, <kbd>Enter</kbd>,
+        <kbd>.</kbd> y <kbd>Esc</kbd>.
+    </p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+</html>
